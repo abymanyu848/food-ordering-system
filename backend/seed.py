@@ -21,41 +21,70 @@ IMAGE_BY_CATEGORY = {
 }
 
 
+FOOD_IMAGES = {
+    "Thalappakatti Special Biryani": "/uploads/foods/special-biryani.jpg",
+    "Thalappakatti Chicken Biryani": "/uploads/foods/chicken-biryani.jpg",
+    "Thalappakatti Egg Biryani": "/uploads/foods/egg-biryani.jpg",
+    "Thalappakatti Mushroom Biryani": "/uploads/foods/mushroom-biryani.jpg",
+    "Butter Naan": "/uploads/foods/butter-naan.jpg",
+    "Chicken Kothu Idiyappam": "/uploads/foods/chicken-kothu-idiyappam.jpg",
+    "Kethal Chicken": "/uploads/foods/kethal-chicken.jpg",
+    "Kothu Kozhi": "/uploads/foods/kothu-kozhi.jpg",
+    "Beef Curry": "/uploads/foods/beef-curry.jpg",
+    "Beef Sukka": "/uploads/foods/beef-sukka.jpg",
+    "Chicken Biryani": "/uploads/foods/chicken-biryani.jpg",
+    "Fresh Lime Soda": "/uploads/foods/fresh-lime-soda.jpg",
+    "Nool Porotta": "/uploads/foods/nool-porotta.jpg",
+    "Bun Porotta": "/uploads/foods/bun-porotta.jpg",
+    "Veechu Porotta Butter": "/uploads/foods/veechu-porotta-butter.jpg",
+    "Keema Porotta Chicken": "/uploads/foods/keema-porotta-chicken.jpg",
+    "Butter Chicken": "/uploads/foods/butter-chicken.jpg",
+    "Chicken Roast Half": "/uploads/foods/chicken-roast-half.jpg",
+    "Topi Vappa Special Chicken Biryani": "/uploads/foods/special-biryani.jpg",
+    "Mutton Biryani": "/uploads/foods/mutton-biryani.jpg",
+    "Kal Dosa": "/uploads/foods/kal-dosa.jpg",
+    "Onion Uthappam": "/uploads/foods/onion-uthappam.jpg",
+    "Tandoori Chicken": "/uploads/foods/tandoori-chicken.jpg",
+    "Chicken Fried Rice": "/uploads/foods/chicken-fried-rice.jpg",
+    "Chicken Biriyani": "/uploads/foods/chicken-biryani.jpg",
+    "Mutton Curry": "/uploads/foods/mutton-curry.jpg",
+    "Beef Roast": "/uploads/foods/beef-roast.jpg",
+    "Chilli Beef": "/uploads/foods/chilli-beef.jpg",
+    "Kerala Parotta": "/uploads/foods/kerala-parotta.jpg",
+    "Lime Juice": "/uploads/foods/lime-juice.jpg",
+    "Veg Biryani": "/uploads/foods/veg-biryani.jpg",
+    "Chicken 65": "/uploads/foods/chicken-65.jpg",
+    "Badam Milk": "/uploads/foods/badam-milk.jpg",
+    "Hot & Crispy Chicken": "/uploads/foods/hot-crispy-chicken.jpg",
+    "Peri Peri Chicken Strips": "/uploads/foods/peri-peri-chicken-strips.jpg",
+    "Chicken Zinger Burger": "/uploads/foods/chicken-zinger-burger.jpg",
+    "Classic Zinger Burger": "/uploads/foods/classic-zinger-burger.jpg",
+    "French Fries": "/uploads/foods/french-fries.jpg",
+    "Pepsi": "/uploads/foods/pepsi.jpg",
+    "Margherita Pizza": "/uploads/foods/margherita-pizza.jpg",
+    "Farmhouse Pizza": "/uploads/foods/farmhouse-pizza.jpg",
+    "Veg Extravaganza Pizza": "/uploads/foods/veg-extravaganza-pizza.jpg",
+    "Chicken Dominator Pizza": "/uploads/foods/chicken-dominator-pizza.jpg",
+    "Garlic Breadsticks": "/uploads/foods/garlic-breadsticks.jpg",
+    "Choco Lava Cake": "/uploads/foods/choco-lava-cake.jpg",
+    "Pongal": "/uploads/foods/pongal.jpg",
+    "Special Masala Dosa": "/uploads/foods/masala-dosa.jpg",
+    "Idiyappam": "/uploads/foods/idiyappam.jpg",
+    "Medu Vada": "/uploads/foods/medu-vada.jpg",
+    "Filter Coffee": "/uploads/foods/filter-coffee.jpg",
+    "Kesari": "/uploads/foods/kesari.jpg",
+    "Chicken Noodles": "/uploads/foods/chicken-noodles.jpg",
+    "Veg Manchurian": "/uploads/foods/veg-manchurian.jpg",
+    "Chicken Manchurian": "/uploads/foods/chicken-manchurian.jpg",
+    "Schezwan Fried Rice": "/uploads/foods/schezwan-fried-rice.jpg",
+}
+
+
 def image_for_food(name: str, category: str) -> str:
-    """Choose a local illustration that matches the dish, then its category."""
-    normalized = name.lower()
-    choices = (
-        ("pizza", "/uploads/foods/pizza.svg"),
-        ("burger", "/uploads/foods/burger.svg"),
-        ("noodles", "/uploads/foods/noodles.svg"),
-        ("fried rice", "/uploads/foods/fried-rice.svg"),
-        ("biryani", "/uploads/foods/biryani.svg"),
-        ("dosa", "/uploads/foods/dosa.svg"),
-        ("uthappam", "/uploads/foods/dosa.svg"),
-        ("pongal", "/uploads/foods/vegetarian.svg"),
-        ("idiyappam", "/uploads/foods/dosa.svg"),
-        ("vada", "/uploads/foods/vegetarian.svg"),
-        ("parotta", "/uploads/foods/parotta.svg"),
-        ("naan", "/uploads/foods/parotta.svg"),
-        ("bread", "/uploads/foods/parotta.svg"),
-        ("lime", "/uploads/foods/beverage.svg"),
-        ("milk", "/uploads/foods/beverage.svg"),
-        ("pepsi", "/uploads/foods/beverage.svg"),
-        ("coffee", "/uploads/foods/beverage.svg"),
-        ("dessert", "/uploads/foods/dessert.svg"),
-        ("cake", "/uploads/foods/dessert.svg"),
-        ("kesari", "/uploads/foods/dessert.svg"),
-        ("chicken", "/uploads/foods/chicken.svg"),
-        ("beef", "/uploads/foods/curry.svg"),
-        ("mutton", "/uploads/foods/curry.svg"),
-        ("curry", "/uploads/foods/curry.svg"),
-        ("manchurian", "/uploads/foods/vegetarian.svg"),
-        ("fries", "/uploads/foods/vegetarian.svg"),
-    )
-    for keyword, path in choices:
-        if keyword in normalized:
-            return path
-    return IMAGE_BY_CATEGORY[category]
+    """Return realistic high-quality dish photograph, with category illustration fallback."""
+    if name in FOOD_IMAGES:
+        return FOOD_IMAGES[name]
+    return IMAGE_BY_CATEGORY.get(category, "/uploads/foods/fallback.jpg")
 
 # Publicly listed Nagercoil localities; blank phone means no number is stored in the demo.
 RESTAURANTS = [
