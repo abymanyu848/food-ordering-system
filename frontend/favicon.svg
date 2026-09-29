@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CraveCart">
+  <rect width="64" height="64" rx="18" fill="#ef6b35"/>
+  <path d="M18 26h28l-3 21H21z" fill="#fffdf8"/>
+  <path d="M24 26c0-7 3-11 8-11s8 4 8 11" fill="none" stroke="#fffdf8" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="27" cy="33" r="2.5" fill="#ef6b35"/><circle cx="37" cy="33" r="2.5" fill="#ef6b35"/>
+</svg>

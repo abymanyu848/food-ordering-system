@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+test-results/
+playwright-report/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# IDE and editor files
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*~
+
+# Node/tool caches
+node_modules/
+.cache/
+.vite/
+.svelte-kit/
+.node_repl_history
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Logs
+logs/
+*.log
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Operating-system files
+.DS_Store
+.DS_Thumbnails
+Thumbs.db
+desktop.ini
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.new
+*.pass
+.passwd
+
+# Screenshots and generated test artifacts
+screenshots/
+FRONTEND_REDESIGN_REPORT.md
+
+# AI-agent temporary directories
+.antigravity/
+.codex/
+.claude/
+
+# Local-only application data
+auth/

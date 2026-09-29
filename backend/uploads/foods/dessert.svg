@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Dessert</title><desc id="desc">A warm chocolate dessert with cream.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#e7d4bd"/><stop offset="1" stop-color="#d47d5a"/></linearGradient><linearGradient id="cake" x1="0" x2="1"><stop stop-color="#6c2e25"/><stop offset="1" stop-color="#b7582a"/></linearGradient></defs>
+  <rect width="800" height="560" rx="40" fill="url(#bg)"/><ellipse cx="400" cy="380" rx="230" ry="45" fill="#632d24" opacity=".2"/><path d="M240 220h320v155c-66 45-254 45-320 0z" fill="url(#cake)" stroke="#57251f" stroke-width="10"/><path d="M235 220c35-60 295-60 330 0-35 48-295 48-330 0z" fill="#7f3426" stroke="#57251f" stroke-width="10"/><path d="M355 172c29-48 102-33 109 15-24 22-76 24-109-15z" fill="#fff2d6"/><path d="M372 174c18-44 58-42 74-11" fill="none" stroke="#a95535" stroke-width="8" stroke-linecap="round"/>
+</svg>

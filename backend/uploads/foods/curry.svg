@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Indian curry</title><desc id="desc">A rich bowl of Indian curry with herbs.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e8d8b2"/><stop offset="1" stop-color="#d47848"/></linearGradient><radialGradient id="sauce"><stop stop-color="#edb44d"/><stop offset="1" stop-color="#a83c25"/></radialGradient></defs>
+  <rect width="800" height="560" rx="40" fill="url(#bg)"/><ellipse cx="400" cy="365" rx="230" ry="62" fill="#613223" opacity=".25"/><path d="M190 275h420l-28 133c-25 64-339 64-364 0z" fill="#f6e6c2" stroke="#6b3426" stroke-width="10"/><ellipse cx="400" cy="277" rx="210" ry="72" fill="url(#sauce)" stroke="#6b3426" stroke-width="10"/><g fill="#f6d185"><circle cx="330" cy="280" r="24"/><circle cx="430" cy="300" r="20"/><circle cx="485" cy="255" r="18"/></g><g fill="#4b7c49"><ellipse cx="365" cy="235" rx="10" ry="25"/><ellipse cx="530" cy="275" rx="10" ry="25" transform="rotate(40 530 275)"/></g>
+</svg>

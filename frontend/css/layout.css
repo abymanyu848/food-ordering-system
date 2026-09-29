@@ -1,0 +1,66 @@
+/* Page frame: header, footer, shell, grids, section headings */
+.page-shell { width: var(--shell); margin-inline: auto; }
+.page-main { padding-top: var(--s-7); padding-bottom: var(--s-8); min-height: 70vh; }
+.section-block { padding-top: var(--s-8); }
+.section-block.section-last { padding-bottom: var(--s-8); }
+
+/* Header — dark leaf bar frames the lighter page */
+header[data-site-header] { position: sticky; top: 0; z-index: 20; background: var(--ink); color: #e6efdc; border-bottom: 3px solid var(--turmeric); }
+.nav-inner { width: min(1264px, calc(100% - 48px)); min-height: var(--header-h); margin: auto; display: flex; align-items: center; gap: var(--s-5); }
+.brand { display: inline-flex; align-items: center; gap: var(--s-3); margin-right: auto; color: #fff; font: 800 1.35rem/1 var(--display); font-stretch: 82%; letter-spacing: -.01em; }
+.brand-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px 50% 8px 50%; background: var(--turmeric); color: var(--ink); font-size: 1rem; }
+.nav-links { display: flex; align-items: center; gap: var(--s-5); font-size: var(--t-sm); font-weight: 500; }
+.nav-links a { padding-block: 6px; border-bottom: 2px solid transparent; color: #c5d6b8; }
+.nav-links a:hover { color: #fff; }
+.nav-links a.active { color: #fff; border-bottom-color: var(--turmeric); }
+.nav-user { display: flex; align-items: center; gap: var(--s-3); font-size: var(--t-sm); color: #c5d6b8; }
+.mobile-menu { display: none; border: 0; background: transparent; color: #fff; font-size: 1.5rem; padding: 6px 10px; }
+header[data-site-header] .button-dark { background: transparent; color: #fff; border-color: rgba(255,255,255,.5); }
+header[data-site-header] .button-dark:hover { background: #fff; color: var(--ink); }
+
+footer[data-site-footer] { background: var(--ink); color: #c5d6b8; }
+.footer-inner { width: var(--shell); margin: auto; padding: var(--s-5) 0; display: flex; justify-content: space-between; gap: var(--s-4); font-size: var(--t-sm); }
+.footer-inner strong { color: #fff; font-family: var(--display); font-stretch: 82%; font-size: 1.1rem; }
+
+/* Grids */
+.card-grid { display: grid; gap: var(--s-5); }
+.restaurant-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.food-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--s-4); }
+
+/* Section headings — a menu-board dotted leader joins title to link */
+.section-heading { display: flex; align-items: flex-end; gap: var(--s-4); margin-bottom: var(--s-5); }
+.section-heading > :first-child { order: 0; }
+.section-heading > :last-child { order: 2; white-space: nowrap; }
+.section-heading h2 { margin-bottom: 0; }
+.section-heading:has(> :nth-child(2))::before { content: ""; order: 1; flex: 1; align-self: flex-end; margin-bottom: .5em; border-bottom: 3px dotted var(--line-strong); min-width: 24px; }
+.section-heading.tight { align-items: center; margin-bottom: var(--s-4); }
+.section-heading.tight h2 { font-size: var(--t-lg); }
+
+.page-intro { padding: var(--s-6) 0 var(--s-5); }
+.page-intro h1 { margin-bottom: var(--s-3); }
+.page-intro.compact { padding-bottom: var(--s-4); }
+.toolbar, .filter-panel { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-3); margin-bottom: var(--s-6); }
+.toolbar .search-bar { flex: 1; min-width: 260px; }
+.filter-panel { padding: var(--s-3); border: 1px solid var(--line); border-radius: var(--r-panel); background: var(--paper); }
+.filter-panel .search-bar { flex: 1 1 250px; }
+
+@media (max-width: 900px) {
+  .restaurant-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .food-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+  :root { --shell: min(100% - 30px, 1200px); --header-h: 60px; }
+  .page-main { padding-top: var(--s-5); }
+  .section-block { padding-top: var(--s-7); }
+  .nav-inner { width: var(--shell); }
+  .mobile-menu { display: block; order: 3; }
+  .nav-user { order: 2; gap: var(--s-2); }
+  .nav-user .user-name { display: none; }
+  .nav-links { position: absolute; top: 100%; left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: var(--s-2) 15px var(--s-4); background: var(--ink); border-bottom: 3px solid var(--turmeric); }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding-block: 12px; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .restaurant-grid, .food-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-3); }
+  .section-heading { flex-wrap: wrap; }
+  .section-heading:has(> :nth-child(2))::before { display: none; }
+  .footer-inner { flex-direction: column; }
+}

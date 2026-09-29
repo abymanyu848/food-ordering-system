@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Vegetarian dish</title><desc id="desc">A colourful vegetarian dish.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#d9e8d1"/><stop offset="1" stop-color="#f2c578"/></linearGradient></defs>
+  <rect width="800" height="560" rx="40" fill="url(#bg)"/><ellipse cx="400" cy="360" rx="250" ry="62" fill="#345c42" opacity=".22"/><ellipse cx="400" cy="285" rx="230" ry="95" fill="#f6e9c1" stroke="#355c45" stroke-width="11"/><circle cx="315" cy="276" r="38" fill="#db6d3d"/><circle cx="410" cy="250" r="43" fill="#e6b83e"/><circle cx="492" cy="300" r="38" fill="#72a64c"/><circle cx="380" cy="329" r="32" fill="#9f5640"/><g fill="#4c854b"><ellipse cx="270" cy="195" rx="12" ry="31" transform="rotate(-25 270 195)"/><ellipse cx="570" cy="210" rx="12" ry="30" transform="rotate(30 570 210)"/></g>
+</svg>

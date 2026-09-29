@@ -1,0 +1,41 @@
+/* CraveCart design tokens — banana-leaf meal on a Nagercoil signboard.
+   Fonts load from Google Fonts; the fallback stacks keep the layout intact offline. */
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,600..800&family=Hind+Madurai:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Colour */
+  --ink: #14261d;            /* deep leaf-black: text, dark surfaces */
+  --ink-soft: #4a5d51;
+  --leaf: #2d6a3e;           /* links, success, active states */
+  --leaf-deep: #1b4a2c;
+  --leaf-wash: #d5e5c9;
+  --page: #edf2e3;           /* page ground: fresh leaf tint */
+  --paper: #fbfcf6;          /* cards, inputs, receipt */
+  --line: #c9d4bf;
+  --line-strong: #93a888;
+  --turmeric: #f0b21a;       /* primary actions */
+  --turmeric-deep: #d69a08;
+  --turmeric-wash: #fbecc0;
+  --turmeric-ink: #7a5200;   /* turmeric-coloured text on light grounds */
+  --chilli: #c2371f;         /* prices, danger, the stamp */
+  --chilli-wash: #f6dcd4;
+
+  /* Type */
+  --display: "Bricolage Grotesque", "Arial Narrow", "Segoe UI", sans-serif;
+  --body: "Hind Madurai", "Segoe UI", system-ui, sans-serif;
+  --t-xs: .8rem;
+  --t-sm: .9rem;
+  --t-base: 1.0625rem;
+  --t-md: 1.25rem;
+  --t-lg: 1.56rem;
+  --t-xl: clamp(1.9rem, 3.2vw, 2.45rem);
+  --t-2xl: clamp(2.5rem, 5vw, 3.9rem);
+  --t-hero: clamp(3.1rem, 7.6vw, 6.3rem);
+
+  /* Space, shape, layout */
+  --s-1: .25rem; --s-2: .5rem; --s-3: .75rem; --s-4: 1rem;
+  --s-5: 1.5rem; --s-6: 2rem; --s-7: 3rem; --s-8: 5rem;
+  --r-input: 8px; --r-btn: 10px; --r-card: 14px; --r-panel: 12px;
+  --shell: min(1200px, calc(100% - 48px));
+  --header-h: 68px;
+}

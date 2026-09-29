@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Chicken starter</title><desc id="desc">Crisp spiced chicken pieces with herbs.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#f4c574"/><stop offset="1" stop-color="#d65b34"/></linearGradient><linearGradient id="chicken" x1="0" x2="1"><stop stop-color="#f6ae38"/><stop offset="1" stop-color="#ad3d21"/></linearGradient></defs>
+  <rect width="800" height="560" rx="40" fill="url(#bg)"/><ellipse cx="400" cy="373" rx="255" ry="58" fill="#662f22" opacity=".23"/><ellipse cx="400" cy="330" rx="235" ry="72" fill="#f9df9c" stroke="#713323" stroke-width="10"/><g fill="url(#chicken)" stroke="#84361f" stroke-width="7"><path d="M260 330c-17-45 39-77 73-40 34-12 59 27 36 55-45 52-95 39-109-15z"/><path d="M408 300c-7-49 59-60 80-16 41-2 51 48 16 67-50 27-91 0-96-51z"/><path d="M505 361c-17-44 36-73 69-40 41-3 57 40 28 67-45 42-87 17-97-27z"/></g><g fill="#3e7443"><path d="M188 260c38-55 42 24 87-5-8 54-62 55-87 5z"/><path d="M595 245c25-38 45 7 75-11-5 39-52 52-75 11z"/></g>
+</svg>
